@@ -1,0 +1,3 @@
+= Terraform Setup für meine Wissensbasis
+
+Terraform-Projekt zur Verwaltung meiner GitHub-Repositorys für die Verwaltung meines Wissenshubs.
