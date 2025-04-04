@@ -19,7 +19,18 @@ resource "github_repository" "repositories" {
   allow_squash_merge     = false
 
   // Enables Dependabot alerts for the repository for vulnerable dependencies
-  vulnerability_alerts   = true
+  vulnerability_alerts = true
+
+  dynamic "pages" {
+    for_each = each.value.has_pages ? [1] : []
+    content {
+      build_type = "workflow"
+      source {
+        branch = "future"
+        path   = "/"
+      }
+    }
+  }
 }
 
 resource "github_branch" "branch_future" {
