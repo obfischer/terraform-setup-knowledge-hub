@@ -17,6 +17,9 @@ resource "github_repository" "repositories" {
   allow_merge_commit     = false
   allow_rebase_merge     = true
   allow_squash_merge     = false
+
+  // Enables Dependabot alerts for the repository for vulnerable dependencies
+  vulnerability_alerts   = true
 }
 
 resource "github_branch" "branch_future" {
