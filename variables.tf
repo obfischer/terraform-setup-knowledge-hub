@@ -6,6 +6,12 @@ variable "var_knowledge_repositories" {
     has_pages : bool
   }))
   default = {
+    "architecture-best-practices" = {
+      description : "Antora-Modul for Architecture Best Practices"
+      public : true
+      has_pages : false
+      topics : ["antora", "asciidoctor", "best-practices", "architecture", "software-engineering"]
+    },
     "knowledge-hub" = {
       description : "Antora-Hauptprojekt für den Wissenshub"
       public : true
