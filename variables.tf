@@ -12,6 +12,12 @@ variable "var_knowledge_repositories" {
       has_pages : true
       topics : ["antora", "asciidoctor"]
     },
+    "api-best-practices" = {
+      description : "Antora-Modul für Best Practices für REST-API"
+      public : true
+      has_pages : false
+      topics : ["antora", "asciidoctor", "api", "http", "rest", "best-practices"]
+    },
     "maven-best-practices" = {
       description : "Antora-Modul für Best Practices für Apache Maven"
       public : true
